@@ -21,6 +21,20 @@ const Work = () => {
     });
   }, []);
 
+  const handleWorkFilter = (item) => {
+    setActiveFilter(item);
+    setanimateCard([{ y: 100, opacity: 0 }]);
+
+    setTimeout(() => {
+      setanimateCard([{ y: 0, opacity: 1 }]);
+      if (item === "All") {
+        setFilterWork(works);
+      } else {
+        setActiveFilter(works.filter((work) => work.tags.includes(item)));
+      }
+    }, 500);
+  };
+
   return (
     <>
       <h2 className="head-text">
@@ -82,7 +96,7 @@ const Work = () => {
                 {work.description}
               </p>
               <div className="app__work-tag app__flex">
-                <p className="p-text"></p>
+                <p className="p-text">{work.tag[0]}</p>
               </div>
             </div>
           </div>
