@@ -61,7 +61,7 @@
     transition: all 0.3s ease;
 
     &:hover {
-      box-shadow: 0 0 25px rgba(0, 0, 0, 0.3);
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
     }
 
     @media screen and (min-width: 2000px) {
@@ -147,6 +147,7 @@
 
   .app__work-tag {
     position: absolute;
+
     padding: 0.5rem 1rem;
     border-radius: 10px;
     background-color: #fff;
