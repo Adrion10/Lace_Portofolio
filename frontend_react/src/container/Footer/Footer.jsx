@@ -10,6 +10,15 @@ const Footer = () => {
       <div className="app__footer-cards">
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
+          <a href="mailto:hello@lace.com" className="p-text">
+            hello@lace.com
+          </a>
+        </div>
+        <div className="app__footer-card">
+          <img src={images.mobile} alt="mobile" />
+          <a href="tel:+49 123456789" className="p-text">
+            +49 123456789
+          </a>
         </div>
       </div>
     </>
