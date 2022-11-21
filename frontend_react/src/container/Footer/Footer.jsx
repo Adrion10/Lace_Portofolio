@@ -10,6 +10,8 @@ const Footer = () => {
     email: "",
     message: "",
   });
+  const [isFormSubmitted, setIsFormSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
   return (
     <>
       <h2 className="head-text">Take a coffe & chat with me</h2>
@@ -60,7 +62,7 @@ const Footer = () => {
           ></textarea>
         </div>
         <button type="button" className="p-text" onCllick={handleSubmit}>
-          Send Message
+          {loading ? "Sending" : "Send Message"}
         </button>
       </div>
     </>
