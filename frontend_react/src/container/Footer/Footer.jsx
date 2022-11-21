@@ -20,6 +20,26 @@ const Footer = () => {
             +49 123456789
           </a>
         </div>
+        <div className="app__footer-form app__flex">
+          <div className="app__flex">
+            <input
+              type="text"
+              className="p-text"
+              placeholder="Your Name"
+              value={name}
+              onChange={handleChange}
+            />
+          </div>
+          <div className="app__flex">
+            <input
+              type="text"
+              className="p-text"
+              placeholder="Your Name"
+              value={name}
+              onChange={handleChange}
+            />
+          </div>
+        </div>
       </div>
     </>
   );
