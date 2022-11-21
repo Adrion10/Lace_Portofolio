@@ -22,6 +22,9 @@ const Footer = () => {
       [name]: value,
     });
   };
+  const handleSubmit = (e) => {
+    setLoading(true);
+  };
   return (
     <>
       <h2 className="head-text">Take a coffe & chat with me</h2>
