@@ -3,7 +3,13 @@ import "./Footer.scss";
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../Wrapper";
 import { client } from "../../client";
+
 const Footer = () => {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
   return (
     <>
       <h2 className="head-text">Take a coffe & chat with me</h2>
@@ -53,6 +59,9 @@ const Footer = () => {
             rows="10"
           ></textarea>
         </div>
+        <button type="button" className="p-text" onCllick={handleSubmit}>
+          Send Message
+        </button>
       </div>
     </>
   );
