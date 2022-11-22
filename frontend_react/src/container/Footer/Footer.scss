@@ -84,13 +84,19 @@
    button{
     padding: 1rem 2rem;
     border-radius: 10px;
-    border: none;background-color: var(--secondaray-color);
+    border: none;
+    background-color: var(--secondary-color);
     font-weight: 500;
     color: #fff;
     outline:none;
     margin: 2rem 0 0 0;
-    
+    font-family: var(--font-base);
+    cursor: pointer;
 
    }
+   @media screen and(max-width:760px){
+    width: 100%;
+    margin: 1rem 0;
+}
 
 }
