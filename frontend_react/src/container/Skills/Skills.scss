@@ -41,7 +41,7 @@
     width: 90px;
     height: 90px;
     border-radius: 50%;
-    background-color: #fef4f5;
+    background-color: #c8bfc1;
 
     img {
       width: 50%;
@@ -49,7 +49,8 @@
     }
 
     &:hover {
-      box-shadow: 0 0 25px #fef4f5;
+      box-shadow: 0 0 25px #6dd7db;
+      background-color: antiquewhite;
     }
 
     @media screen and (min-width: 2000px) {
@@ -136,7 +137,7 @@
 
 .skills-tooltip {
   max-width: 300px !important;
-  background-color: var(--white-color) !important;
+ background-color: var(--white-color) !important;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
   border-radius: 5px !important;
   padding: 1rem !important;
