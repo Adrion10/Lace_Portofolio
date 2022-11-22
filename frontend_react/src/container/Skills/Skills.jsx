@@ -34,7 +34,7 @@ const Skills = () => {
               whileInView={{ opacity: [0, 1] }}
               transition={{ duration: 0.5 }}
               className="app__skills-item app__flex"
-              key={skill.name.id}
+              key={skill.name._id}
             >
               <div
                 className="app__flex"
@@ -50,7 +50,7 @@ const Skills = () => {
           {experiences.map((experience) => (
             <motion.div
               className="app__skills-exp-item"
-              key={experience.year.id}
+              key={experience.year._id}
             >
               <div className="app__skills-exp-year">
                 <p className="bold-text">{experience.year}</p>
