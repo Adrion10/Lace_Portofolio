@@ -52,6 +52,8 @@ const Footer = () => {
             +49 123456789
           </a>
         </div>
+
+        {!isFormSubmitted ? 
         <div className="app__footer-form app__flex">
           <div className="app__flex">
             <input
@@ -63,6 +65,7 @@ const Footer = () => {
               onChange={handleChange}
             />
           </div>
+
           <div className="app__flex">
             <input
               type="text"
@@ -73,8 +76,8 @@ const Footer = () => {
               onChange={handleChange}
             />
           </div>
-        </div>
-        <div>
+          
+              <div>
           <textarea
             className="p-text"
             name={message}
@@ -83,12 +86,18 @@ const Footer = () => {
             onChange={handleChangeInput}
             cols="30"
             rows="10"
-          ></textarea>
+          />
         </div>
         <button type="button" className="p-text" onCllick={handleSubmit}>
           {loading ? "Sending" : "Send Message"}
         </button>
       </div>
+        
+        : 
+        <div>
+          <h3 className="head-text">Thank you for getting in touch</h3>
+        </div>
+         }
     </>
   );
 };
